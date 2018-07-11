@@ -1,4 +1,4 @@
-# Testing applicatin with Angular2. Simple employee directory that is connected to Firebase to house the data.
+# Testing applicatin with Angular2. Simple employee directory utilizing Firebase as the back-end database.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
