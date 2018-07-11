@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Jimmy",
+		"position": "Head Chef",
+		"cCode": "blue"
+	},
+	{
+		"name": "Betty",
+		"position": "Waitress",
+		"cCode": "green"
+	},
+	{
+		"name": "Susan",
+		"position": "Manager",
+		"cCode": "red"
+	}
+]

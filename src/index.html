@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Employee Directory</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <app-root>Loading...</app-root>
+  
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBHaEIFkGYxW09_DScswcnEEzegz676bzg",
+	    authDomain: "angular2-employee-dir.firebaseapp.com",
+	    databaseURL: "https://angular2-employee-dir.firebaseio.com",
+	    projectId: "angular2-employee-dir",
+	    storageBucket: "angular2-employee-dir.appspot.com",
+	    messagingSenderId: "78759106175"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<h2>Employee Listing</h2>
+
+<form id="filter">
+	<label>Filter employees by name</label>
+	<input type="text" [(ngModel)]="term" [ngModelOptions]="{standalone: true}" />
+</form>
+
+<ul id="employee-listing">
+	<li *ngFor="let employee of employees | filter:term">
+		<div class="single-employee">
+			<!-- Employee position -->
+			<span [ngStyle]="{background: employee.cCode}">{{employee.position}}</span>
+			<!-- Employee name -->
+			<h3>{{employee.name}}</h3>
+		</div>
+	</li>
+</ul>
+<form id="add-employee">
+	<input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" />
+	<input type="text" [(ngModel)]="position" [ngModelOptions]="{standalone: true}" />
+	<input type="text" [(ngModel)]="cCode" [ngModelOptions]="{standalone: true}" />
+	<button (click)="fbPostData(name, position, cCode)">Add Employee</button>
+</form>
+
+<button (click)="logIt()">Logging</button>
